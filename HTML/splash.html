@@ -1,62 +1,41 @@
 <!DOCTYPE html>
-<html lang="en-US"></html>
-<title>splash</title>
+<html>
+  <html lang="en-US">
+    <head>
+      <title>splash</title>
+      <link
+        rel="icon"
+        type="image/jpg"
+        href="../Images/Logo_Favicon_Black_32x32.jpg"
+      />
+      <link href="css/style.css" type="text/css" rel="stylesheet" />
+    </head>
 
-<head>
-  <title>Using External CSS</title>
-  <link href="css/style.css" type="text/css" 
-  rel="stylesheet" />
+    <div class="container">
+      <div class="splash_header">NOAH ROSENBERG</div>
 
+      <div class="main_image">
+        <img src="../Images/.svg/Logo - Invert.svg" />
+      </div>
 
+      <div class="subtitle">DESIGN // ARCHITECTURE // EXPERIENCES</div>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="keywords"
-    content="design,architecture,product design,experience design,architectural theory"
-  />
-  <meta
-    name="description"
-    content="Design, Content Creation, Creative Direction"
-  />
-  <meta property="og:title" content="Noah Rosenberg" />
-  <meta
-    property="og:description"
-    content="Design, Content Creation, Creative Direction"
-  />
-
-  <body>
-    <div
-      class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text"
-      <div
-      style="align-items: center; padding: 50px">
-      <img
-        src="https://github.com/quilt-lead/Website/blob/main/Images/Logo_AppleTouchIcon_Black_180x180.jpg"/>
+      <button type="button">
+        <a
+          href="home.html"
+          class="button-module preserve-whitespace--nowrap"
+          style="text-decoration: none; color: black"
+          >ENTER</a
+        >
+      </button>
     </div>
-  </body>
 
-  <body> 
-    <div style="text-align: center; color: white; font-family: BebasKai">
-    DESIGN // ARCHITECTURE // EXPERIENCES
-  </div>
-  </body>
-
-    <button type="enterbutton">
-      <a href="home" class="button-module preserve-whitespace--nowrap"
-        >ENTER</a
-      >
-    </button>
-  </div>
-</body>
-
-
-
+    <script type="text/javascript">
+      window.onpageshow = function (e) {
+        if (e.persisted) {
+          window.location.reload();
+        }
+      };
+    </script>
+  </html>
 </html>
-
-
-<script type="text/javascript">
-  window.onpageshow = function (e) {
-    if (e.persisted) {
-      window.location.reload();
-    }
-  };
-</script>
