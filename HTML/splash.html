@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <html lang="en-US">
-    <head>
-      <title>splash</title>
-      <link
-        rel="icon"
-        type="image/jpg"
-        href="../Images/Logo_Favicon_Black_32x32.jpg"
-      />
-      <link href="css/style.css" type="text/css" rel="stylesheet" />
-    </head>
+<html lang="en-US">
+  <head>
+    <title>splash</title>
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="../Images/Logo_Favicon_Black_32x32.jpg"
+    />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
 
-    <div class="container">
-      <div class="splash_header">NOAH ROSENBERG</div>
+    <background-image>    <section class="canvas">
+      <div id="sketch-holder"></div>
+      <script language="javascript" src="../HTML/js/p5.js"></script>
+      <script language="javascript" src="../HTML/js/sketch.js"></script>
+      <script src="sketch.js"></script>
+    </section></background-image>
+  </head>
 
-      <div class="main_image">
-        <img src="../Images/.svg/Logo - Invert.svg" />
-      </div>
+  <div class="container">
+    <div class="splash_header">NOAH ROSENBERG</div>
 
-      <div class="subtitle">DESIGN // ARCHITECTURE // EXPERIENCES</div>
-
-      <button type="button">
-        <a
-          href="home.html"
-          class="button-module preserve-whitespace--nowrap"
-          style="text-decoration: none; color: black"
-          >ENTER</a
-        >
-      </button>
+    <div class="main_image">
+      <img src="../Images/.svg/Logo - Invert.svg" />
     </div>
 
-    <script type="text/javascript">
-      window.onpageshow = function (e) {
-        if (e.persisted) {
-          window.location.reload();
-        }
-      };
-    </script>
-  </html>
+    <div class="subtitle">DESIGN // ARCHITECTURE // EXPERIENCES</div>
+
+    <button type="button">
+      <a
+        href="home.html"
+        class="button-module preserve-whitespace--nowrap"
+        style="text-decoration: none; color: black"
+        >ENTER</a
+      >
+    </button>
+  </div>
+
+  <script type="text/javascript">
+    window.onpageshow = function (e) {
+      if (e.persisted) {
+        window.location.reload();
+      }
+    };
+  </script>
 </html>
