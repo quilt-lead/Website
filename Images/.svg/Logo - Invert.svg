@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 399">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.6 306.5">
   <defs>
     <style>
       .cls-1, .cls-2 {
         fill: #fff;
       }
 
-      .cls-2 {
-        font-family: Gotham-Bold, Gotham;
-      }
-
       .cls-3 {
-        font-size: 200px;
+        isolation: isolate;
       }
 
-      .cls-4 {
-        font-size: 208px;
+      .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
       }
     </style>
   </defs>
-  <rect class="cls-1" width="399" height="399"/>
-  <text class="cls-2" transform="translate(46.1 190.59)"><tspan class="cls-3"><tspan x="0" y="0">N</tspan></tspan><tspan class="cls-4"><tspan x="0" y="166">R</tspan></tspan></text>
-  <circle class="cls-1" cx="276" cy="287" r="70"/>
-  <path class="cls-1" d="M279,79c23.16,0,42,18.84,42,42s-18.84,42-42,42-42-18.84-42-42,18.84-42,42-42m0-28c-38.66,0-70,31.34-70,70s31.34,70,70,70,70-31.34,70-70-31.34-70-70-70h0Z"/>
+  <g class="cls-3">
+    <path class="cls-1" d="M98.2,140.09L30.4,51.09v89H0V.09H28.4L94,86.29V.09h30.4V140.09h-26.2Z"/>
+  </g>
+  <g class="cls-3">
+    <path class="cls-1" d="M89.07,306.09l-31.2-46.59h-25.17v46.59H.67V160.49H67.23c17.33,0,30.82,4.23,40.46,12.69,9.64,8.46,14.46,20.25,14.46,35.36v.42c0,11.79-2.88,21.39-8.63,28.81-5.76,7.42-13.28,12.86-22.57,16.33l35.57,52h-37.44Zm.62-95.89c0-6.93-2.22-12.13-6.66-15.6-4.44-3.46-10.61-5.2-18.51-5.2h-31.82v41.81h32.45c7.9,0,13.97-1.87,18.2-5.62,4.23-3.74,6.34-8.74,6.34-14.98v-.42Z"/>
+  </g>
+  <circle class="cls-1" cx="213.1" cy="236.5" r="70"/>
+  <path class="cls-2" d="M216.1,28.5c23.16,0,42,18.84,42,42s-18.84,42-42,42-42-18.84-42-42,18.84-42,42-42m0-28c-38.66,0-70,31.34-70,70s31.34,70,70,70,70-31.34,70-70S254.76,.5,216.1,.5h0Z"/>
 </svg>
