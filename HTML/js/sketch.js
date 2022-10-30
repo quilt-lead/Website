@@ -4,9 +4,9 @@ var locs = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  var res = 20;
-  var countX = ceil(width / res) + 1;
-  var countY = ceil(height / res) + 1;
+  var res = 50;
+  var countX = ceil(width / res) + 60;
+  var countY = ceil(height / res) + 20;
 
   for (var j = 0; j < countY; j++) {
     for (var i = 0; i < countX; i++) {
@@ -16,19 +16,19 @@ function setup() {
 }
 
 function draw() {
-  var canvas = createCanvas(windowWidth, windowHeight);
+  var canvas = createCanvas(windowWidth, 5*windowHeight);
   // Move the canvas so it's inside our <div id="sketch-holder">.
   canvas.parent("sketch-holder");
   // #fff
   background(0, 0, 0);
   // #867b00
   stroke(128, 128, 128);
-  for (var i = locs.length - 1; i >= 0; i--) {
+  for (var i = locs.length - 2; i >= 0; i--) {
     var h = calcVec(locs[i].x - mouseX, locs[i].y - mouseY);
     push();
     translate(locs[i].x, locs[i].y);
     rotate(h.heading());
-    line(0, 10, 10, 20);
+    line(0, 20, 20, 20);
     pop();
   }
 }
@@ -36,3 +36,10 @@ function draw() {
 function calcVec(x, y) {
   return new p5.Vector(y - x, -x - y);
 }
+
+function windowresized() {
+  redraw();
+}
+
+
+

@@ -1,5 +1,18 @@
-html, body {
+html {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body {
   min-height: 100%;
+}
+
+.container {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 @font-face {
@@ -15,7 +28,6 @@ body {
   justify-content: center;
   background-color: #000000;
   text-align: center;
-  padding: 50px;
 }
 
 button {
@@ -41,6 +53,7 @@ button {
 button:hover {
   background-color: rgb(152, 152, 152);
   text-decoration: none;
+  scale: +110%;
 }
 
 p {
@@ -53,34 +66,39 @@ p {
 .splash_header {
   font-family: "Bebas";
   color: white;
-  font-size: clamp(40px, 4vw, 60px);
-  padding: 10px;
+  font-size: clamp(30px, 4vw, 75px);
+  padding-bottom: 20px;
+  padding-right: 10px;
   text-decoration: bold;
+  align-items: center;
+  justify-content: center;
 }
 
-.container {
+.splash_contents {
   align-items: center;
   justify-content: center;
   font-family: "Bebas";
   font-size: 24px;
-  margin: 25px;
-  width: vw;
-  height: vh;
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main_image {
+  size: clamp(100px, 8vw, 1200px);
   align-items: center;
   justify-content: center;
-  padding: 60px;
-  max-height: 600px;
-  max-width: 600px;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .subtitle {
-  font-size: 25pt;
+  font-size: clamp(20px, 4vw, 30px);
   color: rgb(143, 143, 143);
   align-items: center;
   justify-content: center;
@@ -90,15 +108,14 @@ p {
   display: flex;
 }
 
-
 .canvas {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  height: fit-content;
-  position: absolute;
-  display: flex;
-  z-index: -100;
   overflow: hidden;
+
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 500%;
 }
+
+
