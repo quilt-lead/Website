@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>splash</title>
+    <title>NOAH ROSENBERG</title>
     <link
       rel="icon"
       type="image/jpg"
@@ -18,28 +18,48 @@
         <script src="../HTML/js/sketch.js"></script>
         <script src="../HTML/js/sketch2.js"></script>
       </section>
+    </background-image>
 
-      </background-image>
+    <style>
+      body {
+        animation: fadeInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      html {
+        overflow-y: hidden;
+        overflow-x: hidden;
+      }
+    </style>
   </head>
 
-  <div class="splash_contents">
-    <div class="splash_header">NOAH ROSENBERG</div>
+  <body>
+    <div class="splash_contents">
+      <div class="splash_header">NOAH ROSENBERG</div>
 
-    <div class="main_image">
-      <img src="../Images/.svg/Logo - Invert.svg" />
-    </div>
+      <div class="main_image">
+        <img src="../Images/.svg/Logo - Invert.svg" />
+      </div>
 
-    <div class="subtitle">DESIGN // ARCHITECTURE // EXPERIENCES</div>
+      <div class="subtitle">DESIGN // ARCHITECTURE // EXPERIENCES</div>
 
-    <button type="button">
       <a
-        href="home.html"
-        class="button-module preserve-whitespace--nowrap"
-        style="text-decoration: none; color: black"
-        >ENTER</a
+        class="enter_button"
+        href="../HTML/home.html"7
+        rel="nofollow"
+        ><span>ENTER</span></a
       >
-    </button>
-  </div>
+    </div>
+  </body>
 
   <script type="text/javascript">
     window.onpageshow = function (e) {
