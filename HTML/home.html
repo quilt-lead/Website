@@ -1,59 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>HOME</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../HTML/css/nav.css" />
+    <title>home</title>
     <link
       rel="icon"
       type="image/jpg"
       href="../Images/Logo_Favicon_Black_32x32.jpg"
     />
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
-
-    <style>
-      body {
-        animation: fadeInAnimation ease 1s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-      }
-      @keyframes fadeInAnimation {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
   </head>
 
-  <header class="site header">
-    <nav>
-      <div class="navbar">
-        <div class="topnav">
-          <a class="nav" href="../HTML/home.html">HOME</a>
-          <a class="nav" href="../HTML/portfolio.html">PORTFOLIO</a>
-          <a class="nav" href="../HTML/resume.html">RESUME</a>
-          <a class="nav" href="../HTML/thesis.html">THESIS</a>
-          <a class="nav" href="../HTML/explore.html">EXPLORE</a>
-          <a class="nav" href="../HTML/contact.html">CONTACT</a>
-          <a class="nav" href="../HTML/about.html">ABOUT</a>
-        </div>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="nav" href="../HTML/home.html">HOME</a></li>
+          <li><a class="nav" href="../HTML/portfolio.html">PORTFOLIO</a></li>
+          <li><a class="nav" href="../HTML/thesis.html">THESIS</a></li>
+          <li><a class="nav" href="../HTML/explore.html">EXPLORE</a></li>
+          <li><a class="nav" href="../HTML/contact.html">CONTACT</a></li>
+          <li><a class="nav" href="../HTML/about.html">ABOUT</a></li>
+        </ul>
+      </nav>
 
-        <div
-          class="headerlogo"
-          data-context="theme.logo.header"
-          data-hover-hint="logo"
-          data-hover-hint-placement="bottom-start"
-        >
-          <a href="../HTML/splash.html" class="image_link">
-            <img
-              class="headerlogo"
-              src="../Images/.svg/Logo - Invert.svg"
-              alt="Noah Rosenberg"
-            />
-          </a>
-        </div>
+      <div id="brand">
+        <a href="../HTML/splash.html" class="image-normal image-link">
+          <img
+            src="../Images/Logo_AppleTouchIcon_Black_180x180.jpg"
+            alt="Noah Rosenberg"
+          />
+        </a>
       </div>
-    </nav>
-  </header>
+
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a class="nav" href="../HTML/home.html">HOME</a></li>
+          <li><a class="nav" href="../HTML/portfolio.html">PORTFOLIO</a></li>
+          <li><a class="nav" href="../HTML/thesis.html">THESIS</a></li>
+          <li><a class="nav" href="../HTML/explore.html">EXPLORE</a></li>
+          <li><a class="nav" href="../HTML/contact.html">CONTACT</a></li>
+          <li><a class="nav" href="../HTML/about.html">ABOUT</a></li>
+        </ul>
+      </div>
+    </header>
+    <script language="javascript" src="../HTML/js/hamburger.js"></script>
+  </body>
 </html>
